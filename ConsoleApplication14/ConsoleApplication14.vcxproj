@@ -142,6 +142,7 @@
     <ClCompile Include="ConsoleApplication14.cpp" />
     <ClCompile Include="DeliveryRobot.cpp" />
     <ClCompile Include="Order.cpp" />
+    <ClCompile Include="OrderInfo.cpp" />
     <ClCompile Include="OrderInterface.cpp" />
     <ClCompile Include="OrderPhone.cpp" />
     <ClCompile Include="OrderProxy.cpp" />
@@ -153,6 +154,7 @@
   <ItemGroup>
     <ClInclude Include="DeliveryRobot.h" />
     <ClInclude Include="Order.h" />
+    <ClInclude Include="OrderInfo.h" />
     <ClInclude Include="OrderInterface.h" />
     <ClInclude Include="OrderPhone.h" />
     <ClInclude Include="OrderProxy.h" />
@@ -160,6 +162,9 @@
     <ClInclude Include="Robot.h" />
     <ClInclude Include="RobotInterface.h" />
     <ClInclude Include="RobotWaiter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,26 +1,25 @@
 #pragma once
-#include "OrderInterface.h"
-#include "Order.h"
+#include "OrderInfo.h"
 #include <iostream>
-class OrderProxy: public OrderInterface {
-    private:
-        Order* _order;
-        void GetStatus() {
-            std::cout << "Order in process" << std::endl;
-        }
 
-    public:
-        OrderProxy(Order* order) {
-            _order = order;
-        }
+class OrderProxy : public IOrder
+{
+private:
+	OrderInfo* prox;
+	void log() { std::cout << "It's proxy!" << std::endl; }
+public:
+	void getOrder(int check)
+	{
+		log();
+		if (check == prox->numberOrder)
+			std::cout << "Order code: " << prox->numberOrder << std::endl << "Client info: " << prox->client << std::endl;
+		else std::cout << "No any orders" << std::endl;
+	}
 
-        void PrintTypeOrder() {
-            GetStatus();
-            _order->PrintTypeOrder();
-        }
-        ~OrderProxy()
-        {
-            delete _order;
-        }
+	OrderProxy(int numberGoods, std::string clientInfo)
+	{
+		prox = new OrderInfo(numberGoods, clientInfo);
+	}
+	~OrderProxy() { delete prox; }
 };
 

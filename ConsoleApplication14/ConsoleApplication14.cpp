@@ -24,8 +24,10 @@ int main()
     robot2.Action();
     order = new Order(orderPhone);
     order->PrintTypeOrder();
-    OrderProxy* orderProxy = new OrderProxy(order);
-    orderProxy->PrintTypeOrder();
+    OrderInfo* orderInfo = new OrderInfo(1, "Ivanov I.I.");
+    OrderProxy* orderProxy = new OrderProxy(1, "Ivanov I.I.");
+    orderInfo->getOrder(1);
+    orderProxy->getOrder(1);
     delete deliveryRobot;
     delete robotWaiter;
     system("pause");
