@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,6 +103,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,6 +118,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +133,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,9 +143,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BeverageFactory.cpp" />
+    <ClCompile Include="Bill.cpp" />
+    <ClCompile Include="BillSystem.cpp" />
     <ClCompile Include="ConsoleApplication14.cpp" />
     <ClCompile Include="DeliveryRobot.cpp" />
+    <ClCompile Include="Dish.cpp" />
+    <ClCompile Include="Facade.cpp" />
+    <ClCompile Include="IBeverage.cpp" />
+    <ClCompile Include="IEat.cpp" />
+    <ClCompile Include="IFactory.cpp" />
+    <ClCompile Include="IIterator.cpp" />
+    <ClCompile Include="IOrderDelivery.cpp" />
+    <ClCompile Include="IProduct.cpp" />
+    <ClCompile Include="IReciept.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Order.cpp" />
+    <ClCompile Include="OrderCost.cpp" />
+    <ClCompile Include="OrderDel.cpp" />
+    <ClCompile Include="OrderDelivery.cpp" />
     <ClCompile Include="OrderInfo.cpp" />
     <ClCompile Include="OrderInterface.cpp" />
     <ClCompile Include="OrderPhone.cpp" />
@@ -152,8 +172,24 @@
     <ClCompile Include="RobotWaiter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BeverageFactory.h" />
+    <ClInclude Include="Bill.h" />
+    <ClInclude Include="BillSystem.h" />
     <ClInclude Include="DeliveryRobot.h" />
+    <ClInclude Include="Dish.h" />
+    <ClInclude Include="Facade.h" />
+    <ClInclude Include="IBeverage.h" />
+    <ClInclude Include="IEat.h" />
+    <ClInclude Include="IFactory.h" />
+    <ClInclude Include="IIterator.h" />
+    <ClInclude Include="IOrderDelivery.h" />
+    <ClInclude Include="IProduct.h" />
+    <ClInclude Include="IReciept.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Order.h" />
+    <ClInclude Include="OrderCost.h" />
+    <ClInclude Include="OrderDel.h" />
+    <ClInclude Include="OrderDelivery.h" />
     <ClInclude Include="OrderInfo.h" />
     <ClInclude Include="OrderInterface.h" />
     <ClInclude Include="OrderPhone.h" />
