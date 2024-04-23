@@ -19,6 +19,7 @@
 #include "BillSystem.h"
 #include "IReciept.h"
 #include "IIterator.h"
+#include "IMenu.h"
 
 int main()
 {
@@ -113,11 +114,13 @@ int main()
     // Вывод всех чеков
     billSystem->PrintBills();
 
+    IMenu* steakDish = new Steak();
+    std::cout << steakDish->printInfo() << std::endl;
+    IMenu* pepperSteak = new Pepper(steakDish);
+    std::cout << pepperSteak->printInfo() << std::endl;
+
     IReciept* adapter = new Adapter();
     std::cout << adapter->GetReciept("Reciept") << std::endl;
-
-    IEat* salad = new EatLeaf("Salad");
-    IEat* delivery = new IEatDecorator("With delivery", salad);
 
     EatComposite* lunchMenu = new EatComposite("Lunch Menu");
     lunchMenu->addEat(new EatLeaf("Hamburger"));

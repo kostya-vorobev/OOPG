@@ -154,6 +154,7 @@
     <ClCompile Include="IEat.cpp" />
     <ClCompile Include="IFactory.cpp" />
     <ClCompile Include="IIterator.cpp" />
+    <ClCompile Include="IMenu.cpp" />
     <ClCompile Include="IOrderDelivery.cpp" />
     <ClCompile Include="IProduct.cpp" />
     <ClCompile Include="IReciept.cpp" />
@@ -182,6 +183,7 @@
     <ClInclude Include="IEat.h" />
     <ClInclude Include="IFactory.h" />
     <ClInclude Include="IIterator.h" />
+    <ClInclude Include="IMenu.h" />
     <ClInclude Include="IOrderDelivery.h" />
     <ClInclude Include="IProduct.h" />
     <ClInclude Include="IReciept.h" />
@@ -201,6 +203,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

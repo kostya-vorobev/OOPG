@@ -107,24 +107,4 @@ public:
     }
 };
 
-class IEatDecorator : public IEat {
-private:
-    std::string description;
-    IEat* eat;
-public:
-    IEatDecorator(std::string description, IEat* eat)
-        : description(description), eat(eat) {
-        std::cout << "decorator " << description << std::endl;
-    }
-    void about() override {
-        eat->about();
-        std::cout << description << "\n";
-    }
-    int size() override {
-        return eat->size() + 1;
-    }
-    void addEat(IEat* eat) override {
-        std::cout << "Cannot add to a decorator.\n";
-    }
-};
 
